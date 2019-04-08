@@ -29,6 +29,10 @@ Plugin 'dyng/ctrlsf.vim'
 Plugin 'kylef/apiblueprint.vim'
 Plugin 'leafgarland/typescript-vim'
 
+" markdown support
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -137,6 +141,19 @@ set si "Smart indent
 set wrap "Wrap lines
 
 set nu
+" encoding
+let &termencoding=&encoding
+set fileencodings=utf-8,gbk,ucs-bom,cp936
+
+"为不同的文件类型设置不同的空格数替换TAB
+autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set ai
+autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set sw=4
+autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set ts=4
+autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set sts=4
+autocmd FileType javascript,html,css,xml set ai
+autocmd FileType javascript,html,css,xml set sw=2
+autocmd FileType javascript,html,css,xml set ts=2
+autocmd FileType javascript,html,css,xml set sts=2
 
 """"""""""""""""""""""""""""""
 " => Status line
@@ -168,6 +185,3 @@ function! HasPaste()
     endif
     return ''
 endfunction
-
-" ===============
-let g:go_version_warning = 0
