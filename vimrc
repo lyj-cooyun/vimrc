@@ -150,10 +150,10 @@ autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set ai
 autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set sw=4
 autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set ts=4
 autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set sts=4
-autocmd FileType javascript,html,css,xml set ai
-autocmd FileType javascript,html,css,xml set sw=2
-autocmd FileType javascript,html,css,xml set ts=2
-autocmd FileType javascript,html,css,xml set sts=2
+autocmd FileType javascript,html,css,xml,yaml,yml,yal set ai
+autocmd FileType javascript,html,css,xml,yaml,yml,yal set sw=2
+autocmd FileType javascript,html,css,xml,yaml,yml,yal set ts=2
+autocmd FileType javascript,html,css,xml,yaml,yml,yal set sts=2
 
 """"""""""""""""""""""""""""""
 " => Status line
